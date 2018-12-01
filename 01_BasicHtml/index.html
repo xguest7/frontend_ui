@@ -7,14 +7,16 @@
     <title>Templates 01</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- 웹브라우저별 기본스타일 통일(여백 선굵기 등 기본태그) -->
+    <link rel="stylesheet" href="css/main.css"> <!-- 나만의 CSS코드 커스텀마이징 -->
 </head>
 <body>
-    <!-- wrapper -->
+    <!-- wrapper 하나의 큰덩어리 웹페이지 전체 모양 컨트롤 -->
     <div id="wrapper">
         
-        <!-- header -->
+        <!-- header 시맨틱 태그-->
         <header id="header">
             <a href="#" class="logo">Template</a>
         </header>
@@ -27,9 +29,9 @@
                 <li><a href="#">Location</a></li>
             </ul>
             <ul class="icons">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Kakaotalk</a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
             </ul>
         </nav>
 
@@ -46,7 +48,7 @@
             <footer class="more"></footer>
         </div>
 
-        <!-- footer -->
+        <!-- footer 부분에서도 사용가능 중복해서(당연히 header 도 마찬가지지)-->
         <footer id="footer">
             <section class="contact">
                 <form method="post" action="#">
@@ -79,9 +81,9 @@
                 <section>
                     <h3>Social</h3>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Kakaotalk</a></li>
+                        <li><a href="#"><i class="fab fa-facebook fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
                     </ul>
                 </section>
             </section>
@@ -100,3 +102,11 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- 
+1. git status
+2. git add .
+3. git commit -m "basic template added"
+4. git push -u origin master
+
+-->

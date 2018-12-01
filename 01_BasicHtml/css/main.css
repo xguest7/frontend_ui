@@ -1,3 +1,7 @@
+/* Golbal Style */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 a {
     color: #000;
     text-decoration: none;   /* 밑줄 없애라 */ 
@@ -13,28 +17,79 @@ li{
     display: inline-block;
 }
 
+/* Custom Style */
+#wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #header {
     text-align: center;
     padding: 60px 0; 
 }
 
 #header a {
-    font-size: 40px;
-    color: #000;
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
     text-decoration: none;
+}
+
+#nav {
+    background-color: rgba(55,55,55,1);
+    /*height: 60px;*/
+    overflow: hidden;
 }
 
 #nav ul.menus{
     float: left;
 }
 
+#nav ul.menus li{
+    padding: 20px;  
+}
+
+#nav ul.menus li.active{ /*띄어쓰기는 자식을 의미하니까 무조건 띄면 안됨*/
+    background-color: #fff;
+    color: #000;
+}
+
+#nav ul.menus li a {
+    color: #fff;  
+}
+
+#nav ul.menus li.active a{
+    color: #000;
+}
+
 #nav ul.icons{
     float: right;
+}
+#nav ul.icons li{
+    padding: 20px;
+}
+
+#nav ul.icons li a{
+    color: #fff;
+}
+
+#main .featured{
+    background-color: #fff;
+    padding: 40px;
+}
+
+#main .featured p{
+    margin: 30px 0;
 }
 
 #main .featured header h2 {
     text-align: center;
-    padding: 50px 40px 0;
+    padding: 20px 0px 40px;
+}
+
+#main .featured header h2 a {
+    font-size: 30px;
 }
 
 #main .featured header a img {
@@ -43,9 +98,11 @@ li{
 
 #footer{
     display: flex;
+    background-color: #eee;
 }
 #footer .contact, #footer .info {
     flex: 1;  /*flex영역에서 1:1 비중을 가지도록 해라*/
+    padding: 30px;
 }
 
 #footer .contact .inputs {
@@ -60,6 +117,7 @@ li{
     border: solid 3px gray;
     /* margin: 0 0 30px 0; */
     margin-bottom: 30px;
+    background-color: #eee;
 }
 
 #footer .contact .inputs textarea{
@@ -68,7 +126,8 @@ li{
     height: 60px;
     border: solid 3px rgb(126, 122, 122);  /*rgba(0,0,0,0) a는 투명값*/
     /* margin: 0 0 30px 0; */
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
+    background-color: #eee;    
 }
 
 #footer .contact .submit input{
@@ -98,4 +157,18 @@ li{
 
 #copyright p{
     color: #CCCCCC;
+}
+
+#copyright p a{
+    color: #ccc;
+}
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background.png) no-repeat fixed center;
+    z-index: -1;
+    opacity: .4;
 }
