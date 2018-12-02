@@ -5,7 +5,7 @@
 
 ## 수업의 목표
 1. Basic Template
-    - HTML, CSS 기본
+    - **HTML**, CSS 기본
 2. Image Slider
 3. Git을 이용한 버전관리
 
@@ -19,3 +19,8 @@ $(document).ready(function(){
         console.log("click");
     })
 });
+````
+
+````html
+<h1>html code 삽입</h1>
+````
