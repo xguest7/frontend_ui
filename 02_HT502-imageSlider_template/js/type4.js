@@ -3,9 +3,10 @@ $(document).ready(function() {
     $(window).resize(() => {
       resizePanelPosition();
     });
-  
-    function resizePanelPosition() {
-      // Control Panel Positioning
+  /////////////////////////////////////////////////////////////////////////////////
+    function resizePanelPosition() { //중요: 정말 많이 쓰는 형태!
+  ////////////////////////////////////////////////////////////////////////////////
+        // Control Panel Positioning
       $left = $("#slider .control .left i");
       $right = $("#slider .control .right i");
       $controlPanel = $("#slider .control a");
