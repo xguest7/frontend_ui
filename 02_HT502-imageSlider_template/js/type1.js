@@ -4,6 +4,7 @@ document.getElementById("slider");
 document.getElementByClassName("slider");  
 
 */  
+  console.log("Hello");
     $items  =  $("#slider ul li.item");
 
     var currentIndex = 1;
